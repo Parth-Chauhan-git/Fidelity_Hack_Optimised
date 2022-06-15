@@ -1,0 +1,99 @@
+body{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 18px;
+}
+.nav_list{
+    text-align: right;
+    display:inline;
+}
+.hero{
+   padding-left: 100px;
+   margin-left: 100px;
+}
+.logo{
+    width: 25%;
+    height: 15%;
+    background-image: url("fidelity_international_rgb_fc.png");
+    background-size: cover;
+    display:inline;
+}
+
+.navbar{
+   display: flex;
+   max-width: 75%;
+    height: 10vh;
+    text-align: center;
+    justify-content: space-evenly;
+}
+section.first{
+   color: white;
+    height: 350px;
+    background-image: url("code-feast.png");
+    background-size: cover;
+    background-position: center;
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+li.nav_el {
+    display:inline;
+    padding: 0.7rem 1rem;
+    color: #313740;
+    font-size: 1.125rem;
+}
+ .toprow{
+    height: 30px;
+    background-color: #20242B;
+ }
+ body{
+    margin:0;
+ }
+ button.code_feast{
+    background-color: #82C823;
+    color: #20242b;
+    border: 0;
+    font-size: large;
+ }
+ .second{
+   display: flex;
+   margin-top: 2rem;
+    background-color: transparent;
+    border: 0.0625rem solid #dcdee1;
+    color: #101215;
+    padding: 2rem;
+ }
+ .bottom{
+   background-color: #dcdee1;
+    display: flex;
+    justify-content: space-evenly;
+    padding :3em;
+ }
+ .content{
+    margin: 3em;
+    padding: 3em;
+    text-align: left;
+ }
+ .fifty{
+    width: 50%;
+ }
+ .seventy{
+    width: 70%;
+ }
+ h4{
+   border-bottom: 2px solid #b9bdc4;
+
+ }
+ .codathon{
+   font-size: 30px ;
+   padding: 5px;
+   margin-left: 15px;
+ }
+ .vid{
+   
+   margin: 20px;
+ }
