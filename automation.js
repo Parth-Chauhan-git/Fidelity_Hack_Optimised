@@ -24,14 +24,49 @@ async function goandupload(){
         'home-page-hero.jpg', 
         'investment-research-homepage.jpg', 
         'tech-homepage.jpg']);
-    await tab.waitForTimeout(8000);
+    await tab.waitForTimeout(10000);
 
     var fs = require('fs');
 
-function deleteFiles(files, callback){
+// function deleteFiles(files, callback){
+//   var i = files.length;
+//   files.forEach(function(filepath){
+//     fs.unlink(filepath, function(err) {
+//       i--;
+//       if (err) {
+//         callback(err);
+//         return;
+//       } else if (i <= 0) {
+//         callback(null);
+//       }
+//     });
+//   });
+// }
+
+// var files = [
+//     'code-feast.jpg',
+//     'customer-services-homepage.jpg', 
+//     'finance-homepage.jpg', 
+//     'home-page-hero.jpg', 
+//     'investment-research-homepage.jpg', 
+//     'tech-homepage.jpg'];
+
+// deleteFiles(files, function(err) {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log('all files removed');
+//   }
+// });
+
+await tab.click( ".download");
+await tab.waitForTimeout(10000);
+
+
+function copyFiles(files, callback){
   var i = files.length;
   files.forEach(function(filepath){
-    fs.unlink(filepath, function(err) {
+    fs.copyFile(filepath, 'F:\\fidelity project optimised' ,function(err) {
       i--;
       if (err) {
         callback(err);
@@ -44,25 +79,30 @@ function deleteFiles(files, callback){
 }
 
 var files = [
-    'code-feast.jpg',
-    'customer-services-homepage.jpg', 
-    'finance-homepage.jpg', 
-    'home-page-hero.jpg', 
-    'investment-research-homepage.jpg', 
-    'tech-homepage.jpg'];
+    'C:\\Users\\iampa\\Downloads\\tinified\\code-feast.jpg',
+    'C:\\Users\\iampa\\Downloads\\tinified\\customer-services-homepage.jpg', 
+    'C:\\Users\\iampa\\Downloads\\tinified\\finance-homepage.jpg', 
+    'C:\\Users\\iampa\\Downloads\\tinified\\home-page-hero.jpg', 
+    'C:\\Users\\iampa\\Downloads\\tinified\\investment-research-homepage.jpg', 
+    'C:\\Users\\iampa\\Downloads\\tinified\\tech-homepage.jpg'];
 
-deleteFiles(files, function(err) {
+copyFiles(files, function(err) {
   if (err) {
     console.log(err);
   } else {
-    console.log('all files removed');
+    console.log('all files copied');
   }
 });
-
-await tab.click( ".download");
 }
 goandupload();
 
 
 
+var fs = require('fs');
 
+let allfiles = fs.readdirSync('./tinified');
+for(let i=0 ; i<allfiles.length ; i++){
+  let sourceFile = './tinified' +'/'+allfiles[i];
+  let destinationFile = './testfolder/'+'/'+allfiles[i];
+  fs.copyFileSync(sourceFile , destinationFile);
+}
