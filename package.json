@@ -1,0 +1,23 @@
+{
+  "name": "fidelity-project-optimised",
+  "version": "1.0.0",
+  "description": "",
+  "main": "down_delete.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Parth-Chauhan-git/Fidelity_Hack_Optimised.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Parth-Chauhan-git/Fidelity_Hack_Optimised/issues"
+  },
+  "homepage": "https://github.com/Parth-Chauhan-git/Fidelity_Hack_Optimised#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.11"
+  }
+}
