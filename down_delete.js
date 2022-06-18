@@ -15,7 +15,7 @@ function deleteFiles(files, callback){
   });
 }
 
-var files = ['code-feast.jpg', 'customer-services-homepage.jpg', 'finance-homepage.jpg'];
+var files = ['code-feast.jpg','customer-services-homepage.jpg', 'finance-homepage.jpg', 'home-page-hero.jpg', 'investment-research-homepage.jpg', 'tech-homepage.jpg'];
 
 deleteFiles(files, function(err) {
   if (err) {
